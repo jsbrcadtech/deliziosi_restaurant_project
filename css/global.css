@@ -46,11 +46,14 @@ a:active{
     color: blanchedalmond;
 }
 .top-bar, .top-bar ul, .title-bar {
-    background: #294634;
+    background-color: #18201b;	
     font-size: 1.2rem;
     justify-content: space-evenly;
 }
-#main,#sidebar,#footer-menu-menu {
+#main{
+    height:100vh;
+}
+#main,#sidebar,#footer-menu {
     color: blanchedalmond;
 }               
 #main p{
@@ -62,12 +65,11 @@ a:active{
     text-align: center;
 }
 .main-images{
-    width: 350px;
+    width: 300px;
     border: 3px solid black;	
 }
 #slideshow { 
     text-align: center;
-    height: 680px; 
     padding: 10px;
 }
 #sidebar {
@@ -82,21 +84,13 @@ border-right: 1px solid #000000;
     padding-top: 15px;
 }
 #footer-menu{
-    text-align: center;
     font-size: 1.2em;
     list-style: none;
     background-color: #18201b;	
 }
-ul#footer-menu{
-    margin:0
-}
-#button{
-	font-size: 2em;
-	border:solid black;
-	background-color: #18201b ;
-	cursor: pointer;
-}
-#modal-btn, #modal{
+
+
+.modal-btn, .button, #top-btn, #main-btn{
     font-family:'Catamaran','Courier New', Courier;
     float: right;
     font-size: 1.5em;
@@ -106,18 +100,25 @@ ul#footer-menu{
     border-radius:12px;
     background-color: #18201b;
 }
-#modal-btn:hover{
+#top-btn:hover{
+    color: black;
+    background-color:#104223 ;
+    }
+#main-btn:hover{
 color: black;
+background-color:#104223;
+}
+#main-btn{
+    margin-right:43%;
+    visibility: hidden;
 }
 
 /* Social Media links */
 .fa {
-    font-size: 2em;
     height: 20px;
     width: 30px;
     padding-left: 5px;
     text-align: center;
-    text-decoration: none;
   }
   /* Facebook */
   .fa-facebook {
@@ -142,9 +143,7 @@ color: black;
   
 @media screen and (max-width: 39.9375em) {
 
-#main {
-    padding-left: 25;    
-}
+
 .hidden{
     width: 250px;
     position: relative;
@@ -154,10 +153,43 @@ color: black;
 #sidebar{
     display: none;
 }
-#footer, #footer-menu{
-    display: none;
+#top-btn{
+display: none;
+}
+#main-btn{
+    margin-right:35%;
+    visibility:visible;
 }
 }
+@media screen and (min-width: 64em) {
+    h1{
+        font-size: 4em;
+    }
+    h2, h3{
+        font-family: 'Telex', sans-serif;
+        font-size: 1.6em;
+    }
+    p{
+        font-family: 'NTR', sans-serif;
+        font-size: 1.8em;
+        line-height: 20px;
+    }
+    .main-images{
+        width: 500px;	
+    }
+    #slideshow { 
+        width: 500px;
+        margin-left: 30%;	
+    }
+    .top-bar, .top-bar ul, .title-bar,#footer-menu {
+        background-color: #18201b;	
+        font-size: 1.8rem;
+       
+    }
+
+}
+
+
 
 
 
