@@ -142,8 +142,8 @@ color: black;
   
 @media screen and (max-width: 39.9375em) {
 
-#main p,#slideshow{
-    display: none;
+#main {
+    padding-left: 25;    
 }
 .hidden{
     width: 250px;
@@ -154,7 +154,7 @@ color: black;
 #sidebar{
     display: none;
 }
-#footer{
+#footer, #footer-menu{
     display: none;
 }
 }
