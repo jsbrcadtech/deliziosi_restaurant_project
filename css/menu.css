@@ -1,0 +1,38 @@
+
+
+
+#main ul li{
+list-style: none;
+background-color: #294634;
+border: #294634 ;
+
+}
+#main ul li p{
+    font-size: 0.9em;
+    text-align: left;
+}
+.accordion-item.is-active .accordion-title { 
+    color: blanchedalmond;
+    background: #294634; 
+    font-family:'Catamaran','Courier New', Courier;
+    border:black;
+    text-align: center;
+}
+
+.accordion-title {
+    font-size: 1.2em;
+    border:black;
+}
+.accordion-title:hover{
+    color: white;
+    background-color: #294634;
+}
+.accordion-content{
+    font-size: 1.2em;
+    background-color: #294634;
+    color: white;
+    border:black;
+  
+   
+}
+
